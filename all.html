@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IREO Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* 1. Animation Define Karein (Horizontal Slide) */
+        @keyframes arrowMove {
+            0% {
+                transform: translateX(0);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateX(15px); /* Arrow 15px aage jayega */
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 0.8;
+            }
+        }
+
+        /* 2. Arrow Icon ki Styling */
+        .moving-arrow {
+            display: inline-block;
+            width: 40px; /* Zarurat ke hisaab se adjust karein */
+            margin-bottom: 10px;
+            /* Infinite Smooth Loop */
+            animation: arrowMove 2s ease-in-out infinite;
+        }
+
+        /* 3. Text Styling (As per your screenshot) */
+        .welcome-text {
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* 4. Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .moving-arrow {
+                width: 30px;
+                animation-duration: 1.5s; /* Mobile par thoda fast slide */
+            }
+            .welcome-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #111; padding: 50px;"> <div class="container text-start">
+        <div class="d-flex flex-column align-items-start">
+            
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545682.png" 
+                 alt="Arrow" 
+                 class="moving-arrow img-fluid">
+
+            <h2 class="welcome-text">WELCOME TO IREO</h2>
+            
+        </div>
+    </div>
+
+</body>
+</html>
