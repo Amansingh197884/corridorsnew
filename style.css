@@ -251,22 +251,20 @@
         }
 
         /* Amenities Styling */
-        .banner-sectionn .amenities-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .banner-sectionn .amenities-list li {
+    
+        .start-pr {
             background: rgba(255, 255, 255, 0.12);
             margin-bottom: 12px;
             padding: 14px;
-            border-left: 5px solid var(--gold-color);
+            border-left: 5px solid orangered;
             backdrop-filter: blur(10px);
             border-radius: 0 10px 10px 0;
             font-size: 1.15rem;
             max-width: 580px;
             display: flex;
+            color: #fff !important;
             align-items: center;
+            max-width: 400px;
         }
        
 

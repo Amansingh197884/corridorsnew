@@ -129,7 +129,7 @@
         </div>
 
         <div class="static-content-overlay">
-            <div class="container c">
+            <div class="container">
                 <div class="row gy-5 align-items-center">
 
                     <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1200">
@@ -145,14 +145,11 @@
 
                         </p>
 
-                        <ul class="amenities-list">
-                            <li><img class="me-2" src="images/checked.png" style="width: 25px;">Starting
+                          <div class="start-pr">
+                             <img class="me-2" src="images/checked.png" style="width: 25px;">Starting
                                 from
-                                ₹ 1.99 Cr* Onwards*</li>
-
-                            <!-- <li><i class="fa-solid fa-check-double me-3" style="color: var(--gold-color);"></i>72,000 sq.ft Grand Clubhouse
-</li> -->
-                        </ul>
+                                ₹ 1.99 Cr* Onwards*
+                          </div>
 
                         <div class="mt-4  hero-btn">
                             <a href="tel:9112764534" class="call-us-btn" style="font-size: 25px !important;">
@@ -164,16 +161,12 @@
                     <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
                         <div class="form-card">
                             <h3>Message Type Here</h3>
-                            <form id="leadForm">
+                            <form>
                                 <input type="text" class="form-control" placeholder="Full Name" required>
                                 <input type="tel+" class="form-control" placeholder="Phone No" required>
                                 <input type="text" class="form-control" placeholder="Your City" required>
 
-                                <!-- <div class="captcha-box">
-                                    <span class="captcha-label">3 + 5 =</span>
-                                    <input type="number" class="form-control mb-0 border-0 shadow-none"
-                                        placeholder="Total" required>
-                                </div> -->
+                               
 
                                 <button type="submit" class="submit-btn">GET A QUOTE</button>
                             </form>
@@ -1133,11 +1126,10 @@
                     navigateByImgClick: true,
                     preload: [0, 1]
                 },
-                mainClass: 'mfp-fade', // Required to trigger the transitions
-                removalDelay: 600,     // Time for the closing animation
+                mainClass: 'mfp-fade',
+                removalDelay: 600,    
                 callbacks: {
                     beforeOpen: function () {
-                        // This is where you can add logic before open
                     }
                 }
             });
