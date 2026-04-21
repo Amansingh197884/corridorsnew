@@ -268,14 +268,7 @@
             display: flex;
             align-items: center;
         }
-        @media screen and(max-width:777px){
-           .banner-sectionn .amenities-list li{
-            align-items: start !important;
-            justify-content: start !important;
-            align-content: start !important;
-            text-align: start !important;
-           } 
-        }
+       
 
         /* Form Styling */
         .banner-sectionn .form-card {
